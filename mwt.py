@@ -39,3 +39,4 @@ class MWT(object):
         func.func_name = f.__name__
 
         return func
+
