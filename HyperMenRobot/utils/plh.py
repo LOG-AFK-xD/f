@@ -13,9 +13,9 @@ from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
 
-from mrjoker import OWNER_ID, SUPPORT_CHAT
-from mrjoker.utils.errors import split_limits
-from mrjoker import pbot
+from HyPerMenRobot import OWNER_ID, SUPPORT_CHAT
+from HyPerMenRobot.utils.errors import split_limits
+from HyPerMenRobot import pbot
 
 
 def get_user(message: Message, text: str) -> [int, str, None]:
@@ -307,7 +307,7 @@ def admins_only(func: Callable) -> Coroutine:
     return wrapper
 
 
-# @Mr_Dark_Prince
+# @Official_Afk_xD
 def capture_err(func):
     @wraps(func)
     async def capture(client, message, *args, **kwargs):
