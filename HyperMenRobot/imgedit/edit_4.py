@@ -7,7 +7,7 @@ import numpy as np
 import requests
 from PIL import Image, ImageDraw, ImageOps
 
-from mrjoker import REM_BG_API_KEY
+from HyPerMenRobot import REM_BG_API_KEY
 
 async def rotate_90(client, message):
     try:
@@ -23,7 +23,7 @@ async def rotate_90(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...")
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.cv2.ROTATE_90_CLOCKWISE)
             cv2.imwrite(edit_img_loc, image)
@@ -62,7 +62,7 @@ async def rotate_180(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...")
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.ROTATE_180)
             cv2.imwrite(edit_img_loc, image)
@@ -101,7 +101,7 @@ async def rotate_270(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...")
             src = cv2.imread(a)
             image = cv2.rotate(src, cv2.ROTATE_90_COUNTERCLOCKWISE)
             cv2.imwrite(edit_img_loc, image)
@@ -151,7 +151,7 @@ async def round_sticker(client, message):
             a = await client.download_media(
                 message=message.reply_to_message, file_name=download_location
             )
-            await msg.edit("Processing Image...🤡")
+            await msg.edit("Processing Image...")
             resized = resize_photo(a, userid)
             img = Image.open(resized).convert("RGB")
             npImage = np.array(img)
@@ -356,7 +356,7 @@ async def removebg_sticker(client, message):
                 await client.download_media(
                     message=message.reply_to_message, file_name=download_location
                 )
-                await msg.edit("Processing Image...🤡")
+                await msg.edit("Processing Image...")
 
                 response = requests.post(
                     "https://api.remove.bg/v1.0/removebg",
