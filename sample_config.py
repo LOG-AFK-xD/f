@@ -4,7 +4,7 @@ import os
 
 
 def get_user_list(config, key):
-    with open("{}/mrjoker/{}".format(os.getcwd(), config), "r") as json_file:
+    with open("{}/HyPerMenRobot/{}".format(os.getcwd(), config), "r") as json_file:
         return json.load(json_file)[key]
 
 
@@ -18,8 +18,8 @@ class Config(object):
     API_HASH = "hmmmm"
     TOKEN = "BOT_TOKEN"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 948247711  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "kavinduaj"
-    SUPPORT_CHAT = "lkhitech"  # Your own group for support, do not add the @
+    OWNER_USERNAME = "Official_afk_xD"
+    SUPPORT_CHAT = "Team_Bot_Support"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001253661229
     )  # Prints any new group the bot is added to, prints just the name and ID.
