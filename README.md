@@ -1,7 +1,7 @@
-<h1 align = "center"> ❝𝐓𝐡𝐞 𝐌𝐨𝐬𝐭 𝐏𝐨𝐰𝐞𝐫𝐟𝐮𝐥𝐥 𝐆𝐫𝐨𝐮𝐩 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐁𝐨𝐭❞ </h1>
+<h1 align = "center"> ❝The Most Powerful Group Management Bot❞ </h1>
 
 
-<p align = "center"><a herf = "https://t.me/Mrjokerlk_bot" alt = "Mrjoker"><img src ="https://socialify.git.ci/kjeymax/MR-JOKER_BOT/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="MR.Joker Bot" width="900"</a></p>
+<p align = "center"><a herf = "https://t.me/HyPerMen_rbot" alt = "HyPerMen"><img src ="https://socialify.git.ci/Official-afk-xD/HyPerMen-Robot/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="MR.Joker Bot" width="900"</a></p>
 
 <p align = "center">
 <a href = "https://python.org">
@@ -10,26 +10,19 @@
 </a>
 
 <p align = "center">
-<a href = "https://github.com/kjeymax/MR-JOKER_BOT">
+<a href = "https://github.com/Official-afk-xD/HyPerMen-Robot">
 <img src = "https://forthebadge.com/images/badges/open-source.svg">
 </p>
 </a>
 
 
 <p align="Center">
-<a href="https://github.com/kjeymax/MR-JOKER_BOT/discussions" alt="Mr Joker"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
+<a href="https://github.com/Official-afk-xD/HyPerMen-Robot/Discussions" alt="HyPerMen"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Hyper%20Men%20Discussions-9cf" /> </a>
 
-
-<h1 align ="center"> 𝍖𝍖𝍖𐒄Ɽ.ʝⰙƘƸⱤ𝍖𝍖𝍖</h1>
-<h1 align = "center">Yo,🤡♂️I'm Alive..I'm a super bot 🔥...🚴‍♂️Speed 1 THz..Memory 1 Zettabyte.🕺</center></h1>
-
-<p><h3 align = "justify">A modular telegram Python bot running on python3 with an sqlalchemy database.</br></br></h3>
-  
-<h3 align = "justify">Originally a simple group management bot with multiple admin features, it has evolved into becoming a basis for modular bots aiming to provide simple plugin expansion via a simple drag and drop.</h3></p>
 
 
 ## Deploy
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LOG-AFK-xD/f)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Official-afk-xD/HyPerMen-Robot)
 
 [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
 
@@ -43,7 +36,7 @@
 
 ```
 
-python3 -m mrjoker
+python3 -m HyPerMenRobot
 
 ```
 
@@ -162,15 +155,6 @@ sqldbtype://username:pw@hostname:port/db_name
 <p align="left">
 <a href="https://github.com/kjeymax/MR-JOKER_BOT/discussions" alt="Mr Joker"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
 
-## Credits
 
- - [Utah](https://github.com/minatouzuki/utah).
- - [WilliamButcherBot](https://github.com/thehamkercat/WilliamButcherBot)
- - [Alita_Robot](https://github.com/DivideProjects/Alita_Robot/)
- - [Saitama Robot](https://github.com/AnimeKaizoku/SaitamaRobot)
-
-<h3 align = "justify">Don't forget to star this repo if you liked it.</br></br>
-
-Enjoy Your Bot! 💝</h3> 
 
 
