@@ -1,7 +1,7 @@
 <h1 align = "center"> ❝The Most Powerful Group Management Bot❞ </h1>
 
 
-<p align = "center"><a herf = "https://t.me/HyPerMen_rbot" alt = "HyPerMen"><img src ="https://socialify.git.ci/Official-afk-xD/HyPerMen-Robot/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https://telegra.ph/file/96823c4e2331970dc3300.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="HyPerMen Bot" width="900"</a></p>
+<p align = "center"><a herf = "https://t.me/HyPerMen_rbot" alt = "HyPerMen"><img src ="https://socialify.git.ci/Official-afk-xD/HyPerMen-Robot/image?description=1&font=Bitter&forks=1&issues=1&language=" alt="HyPerMen Bot" width="900"</a></p>
 
 <p align = "center">
 <a href = "https://python.org">
