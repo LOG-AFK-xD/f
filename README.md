@@ -27,15 +27,6 @@
 
 
 
-## Starting the bot
-
-<h3 align = "justify">Once you've setup your database and your configuration (see below) is complete, simply run:</h3>
-
-```
-
-python3 -m HyPerMenRobot
-
-```
 
 ## Configuration 
 
@@ -74,74 +65,6 @@ python3 -m HyPerMenRobot
 -   `REM_BG_API_KEY`       : Go to this site https://www.remove.bg/api#remove-background. Get your api key
 -    `GENIUS_API_TOKEN`    : Go to this site https://docs.genius.com/. Get your api token
  
- 
-## Python dependencies
-
-<h3 align = "justify">Install the necessary python dependencies by moving to the project directory and running:</h3>
-
-```
-pip3 install -U -r requirements.txt
-
-```
-
-
-## Database
-
-<h3 align = "justify">If you wish to use a database-dependent module (eg: locks, notes, userinfo, users, filters, welcomes), you'll need to have a database installed on your system. I use postgres, so I recommend using it for optimal compatibility.</br></br>
-
-In the case of postgres, this is how you would set up a the database on a debian/ubuntu system. Other distributions may vary</h3>
-
-- Install postgresql  
-
-```
-sudo apt-get update && sudo apt-get install postgresql 
-
-```
-
-- Change to the postgres user 
- 
- ```
- sudo su - postgres
- 
- ```
- 
- - Create a new database user (change YOUR_USER appropriately)
- 
- ```
- createuser -P -s -e YOUR_USER
- 
- ```
- 
-This will be followed by you needing to input your password.
-
-- create a new database table:
-
-```
-
-createdb -O YOUR_USER YOUR_DB_NAME
-
-```
-
-Change YOUR_USER and YOUR_DB_NAME appropriately.
-
-- finally:
-
-```
-
-psql YOUR_DB_NAME -h YOUR_HOST YOUR_USER
-
-```
-
-<h3 align = "justify">This will allow you to connect to your database via your terminal. By default, YOUR_HOST should be 0.0.0.0:5432.</br></br>
-
-You should now be able to build your database URI. This will be:</h3>
-
-```
-sqldbtype://username:pw@hostname:port/db_name
-
-```
-
-<h3 align = "justify">Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc) repeat for your username, password, hostname (localhost?), port (5000), and db name.</h3>
 
 ## Support
 [![SUPPORT](https://img.shields.io/badge/BOT-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/TEAM_BOT_SUPPPORT)</br></br>
