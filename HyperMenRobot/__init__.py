@@ -239,7 +239,7 @@ motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
 db = motor[MONGO_DB]
 engine = AIOEngine(motor, MONGO_DB)
 
-print("[MRJOKER]: INITIALZING AIOHTTP SESSION")
+print("[HyPerMen]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
