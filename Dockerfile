@@ -1,6 +1,6 @@
 FROM python:3.9.1-buster
 
-WORKDIR /root/mrjoker
+WORKDIR /root/HyPerMenRobot
 
 COPY . .
 
@@ -8,4 +8,4 @@ RUN pip3 install --upgrade pip setuptools
 
 RUN pip install -U -r requirements.txt
 
-CMD ["python3","-m","mrjoker"]
+CMD ["python3","-m","HyPerMenRobot"]
