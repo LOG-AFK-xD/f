@@ -1,7 +1,7 @@
 <h1 align = "center"> ❝The Most Powerful Group Management Bot❞ </h1>
 
 
-<p align = "center"><a herf = "https://t.me/HyPerMen_rbot" alt = "HyPerMen"><img src ="https://socialify.git.ci/Official-afk-xD/HyPerMen-Robot/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https%3A%2F%2Fte.legra.ph%2Ffile%2Fc263660e71bab023a4318.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="MR.Joker Bot" width="900"</a></p>
+<p align = "center"><a herf = "https://t.me/HyPerMen_rbot" alt = "HyPerMen"><img src ="https://socialify.git.ci/Official-afk-xD/HyPerMen-Robot/image?description=1&font=Bitter&forks=1&issues=1&language=1&logo=https://telegra.ph/file/96823c4e2331970dc3300.png&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark" alt="HyPerMen Bot" width="900"</a></p>
 
 <p align = "center">
 <a href = "https://python.org">
@@ -147,14 +147,6 @@ sqldbtype://username:pw@hostname:port/db_name
 <h3 align = "justify">Replace sqldbtype with whichever db youre using (eg postgres, mysql, sqllite, etc) repeat for your username, password, hostname (localhost?), port (5000), and db name.</h3>
 
 ## Support
-[![HITECH](https://img.shields.io/badge/LKHITECH-Channel-red?style=for-the-badge&logo=telegram)](https://telegram.dog/lkhitech)</br></br>
-[![HITECH](https://img.shields.io/badge/LKHITECH-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/hitechlkgroup)</br></br>
-[![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/kavinduaj)
-
-## Discussions
-<p align="left">
-<a href="https://github.com/kjeymax/MR-JOKER_BOT/discussions" alt="Mr Joker"> <img src="https://img.shields.io/badge/%F0%9F%A4%A1-Mr%20Joker%20Discussions-9cf" /> </a>
-
-
-
-
+[![SUPPORT](https://img.shields.io/badge/BOT-Group-red?style=for-the-badge&logo=telegram)](https://telegram.dog/TEAM_BOT_SUPPPORT)</br></br>
+[![UPDATES](https://img.shields.io/badge/BOT-Channel-red?style=for-the-badge&logo=telegram)](https://telegram.dog/TEAM_BOT_UPDATE)</br></br>
+[![CONTACT ME](https://img.shields.io/badge/Telegram-Contact%20Me-informational)](https://t.me/Official_pro_xD)
