@@ -1,7 +1,7 @@
 {
-      "name": "MR.JOKER BOT",
-      "description": "POWERFULL TELEGRAM GROUP MANAGEMENT BOT",
-      "logo": "https://telegra.ph/file/6525d89de5b72003d80fa.png",
+      "name": "HyPerMen BOT",
+      "description": "A POWERFULL TELEGRAM GROUP MANAGEMENT BOT",
+      "logo": "https://telegra.ph/file/31439139a3590ca0d6b9b.png",
       "keywords": [
          "telegram",
          "anime",
@@ -10,7 +10,7 @@
          "bot",
          "mrjoker"
       ],   
-   "repository": "https://github.com/kjeymax/MR-JOKER_BOT.git",
+   "repository": "https://github.com/Official-afk-xD/HyPerMen-Robot",
    "addons": [
       {
          "options": {
@@ -51,22 +51,22 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"
+         "value": "5052969674"
       },      
       "SUDO_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"   
+         "value": "5052969674"   
       },
       "SUPPORT_USERS":{
             "description": "Your user ID's as an integer.",
             "required" : true,
-            "value" : "1131653685"
+            "value" : "5052969674"
       },      
       "WHITELIST_USERS": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1131653685"     
+         "value": "5052969674"     
      
       },
       "BOT_ID": {
@@ -84,12 +84,12 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "kavinduaj"
+         "value": "Official_Afk_xD"
       },
       "SUPPORT_CHAT": {
-         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: lkhitech. If this ever points to masha support than consider you made an enemy.",
+         "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like:. If this ever points to masha support than consider you made an enemy.",
          "required": true,
-         "value": "lkhitech"
+         "value": "Team_Bot_Support"
       },
       "MONGO_DB_URI": {
          "description": "Required for database connections.",
@@ -199,7 +199,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://t.me/kavinduaj"
+         "value": "Team_Bot_Update"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
