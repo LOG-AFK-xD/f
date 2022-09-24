@@ -1,6 +1,6 @@
-import mrjoker.modules.sql.blacklistusers_sql as sql
-from mrjoker import ALLOW_EXCL
-from mrjoker import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+import HyPerMenRobot.modules.sql.blacklistusers_sql as sql
+from HyPerMenRobot import ALLOW_EXCL
+from HyPerMenRobot import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
 
 from telegram import Update
 from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
