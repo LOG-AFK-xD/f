@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from mrjoker.modules.helper_funcs.msg_types import Types
-from mrjoker.modules.sql import BASE, SESSION
+from HyPerMenRobot.modules.helper_funcs.msg_types import Types
+from HyPerMenRobot.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
