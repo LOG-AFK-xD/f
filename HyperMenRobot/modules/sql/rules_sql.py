@@ -1,6 +1,6 @@
 import threading
 
-from mrjoker.modules.sql import BASE, SESSION
+from HyPerMenRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, UnicodeText, distinct, func
 
 
