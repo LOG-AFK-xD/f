@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from mrjoker.modules.sql import BASE, SESSION
+from HyPerMenRobot.modules.sql import BASE, SESSION
 
 
 class Nsfwatch(BASE):
