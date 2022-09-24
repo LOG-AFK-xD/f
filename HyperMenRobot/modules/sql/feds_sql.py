@@ -1,7 +1,7 @@
 import threading
 
-from mrjoker import dispatcher
-from mrjoker.modules.sql import BASE, SESSION
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from telegram.error import BadRequest, Unauthorized
 
