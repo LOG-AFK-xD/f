@@ -1,6 +1,6 @@
 TRUTH = (
     "TU APNA NOSE PAKD SAKTA HAI?",
-    "Do you love @kavinduaj",
+    "Do you love @Official_afk_xD",
     "BATHROOM ME KYA KRTA HAI TU? ",
     "MIRROR ME DEK KR KHUD SE BAAT KRNE KI CHUTIYAPA KIYA HAI KABHI? ",
     "KABHI BHOOT DEKHA HAI?",
