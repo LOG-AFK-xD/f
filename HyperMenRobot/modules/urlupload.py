@@ -6,9 +6,9 @@ import aiohttp
 import traceback
 
 from telethon import events
-from mrjoker.utils.plh import humanbytes, time_formatter
-from mrjoker import telethn as bot
-from mrjoker.utils.plh import humanbytes, progress
+from HyPerMenRobot.utils.plh import humanbytes, time_formatter
+from HyPerMenRobot import telethn as bot
+from HyPerMenRobot.utils.plh import humanbytes, progress
 
 TEMP_DOWNLOAD_DIRECTORY = "./"
 
