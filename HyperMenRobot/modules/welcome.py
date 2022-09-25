@@ -23,8 +23,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown, mention_html, mention_markdown
 
-import mrjoker.modules.sql.welcome_sql as sql
-from mrjoker import (
+import HyPerMenRobot.modules.sql.welcome_sql as sql
+from HyPerMenRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -36,15 +36,15 @@ from mrjoker import (
     dispatcher,
     sw,
 )
-from mrjoker.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
-from mrjoker.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from mrjoker.modules.helper_funcs.msg_types import get_welcome_type
-from mrjoker.modules.helper_funcs.string_handling import (
+from HyPerMenRobot.modules.helper_funcs.chat_status import is_user_ban_protected, user_admin
+from HyPerMenRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from HyPerMenRobot.modules.helper_funcs.msg_types import get_welcome_type
+from HyPerMenRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.sql.global_bans_sql import is_user_gbanned
+from HyPerMenRobot.modules.logchannel import loggable
+from HyPerMenRobot.modules.sql.global_bans_sql import is_user_gbanned
 
 VALID_WELCOME_FORMATTERS = [
     "first",
