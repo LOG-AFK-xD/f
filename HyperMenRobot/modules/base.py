@@ -7,8 +7,8 @@ import numpy as np
 from pydub import AudioSegment
 from telethon import events
 
-from mrjoker.utils.plh import is_admin
-from mrjoker import telethn, BOT_ID, OWNER_ID, SUPPORT_CHAT
+from HyPerMenRobot.utils.plh import is_admin
+from HyPerMenRobot import telethn, BOT_ID, OWNER_ID, SUPPORT_CHAT
 
 TMP_DOWNLOAD_DIRECTORY = "./"
 
@@ -88,7 +88,7 @@ async def __(event):
         )
 
     else:
-        m.name = "BassBoosted(Mr.Joker).mp3"
+        m.name = "BassBoosted(HyPerMenRobot).mp3"
         await lel.edit("`Now Exporting...`")
         await asyncio.sleep(0.3)
         out.export(m, format="mp3")
