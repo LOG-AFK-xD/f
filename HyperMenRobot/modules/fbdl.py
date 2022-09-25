@@ -8,8 +8,8 @@ from yt_dlp import YoutubeDL
 from datetime import datetime
 from telethon import events
 
-from mrjoker.utils.plh import is_admin
-from mrjoker import telethn, BOT_USERNAME, SUPPORT_CHAT
+from HyPerMenRobot.utils.plh import is_admin
+from HyPerMenRobot import telethn, BOT_USERNAME, SUPPORT_CHAT
 
 
 def main(url, filename):
