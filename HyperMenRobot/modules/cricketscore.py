@@ -2,7 +2,7 @@ import urllib.request
 
 from bs4 import BeautifulSoup
 from telethon import events
-from mrjoker import telethn as tbot
+from HyPerMenRobot import telethn as tbot
 from telethon.tl import functions, types
 from telethon.tl.types import *
 
