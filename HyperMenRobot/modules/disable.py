@@ -12,9 +12,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import escape_markdown
 
-from mrjoker import dispatcher
-from mrjoker.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from mrjoker.modules.helper_funcs.misc import is_module_loaded
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
+from HyPerMenRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -28,7 +28,7 @@ if is_module_loaded(FILENAME):
         is_user_admin,
         user_admin,
     )
-    from mrjoker.modules.sql import disable_sql as sql
+    from HyPerMenRobot.modules.sql import disable_sql as sql
 
     DISABLE_CMDS = []
     DISABLE_OTHER = []
