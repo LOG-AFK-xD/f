@@ -12,10 +12,10 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-from mrjoker import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
-from mrjoker.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.sql import reporting_sql as sql
+from HyPerMenRobot import DRAGONS, LOGGER, TIGERS, WOLVES, dispatcher
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from HyPerMenRobot.modules.logchannel import loggable
+from HyPerMenRobot.modules.sql import reporting_sql as sql
 
 REPORT_GROUP = 12
 REPORT_IMMUNE_USERS = DRAGONS + TIGERS + WOLVES
