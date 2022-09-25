@@ -1,11 +1,11 @@
 import html
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker import dispatcher, DRAGONS
-from mrjoker.modules.helper_funcs.extraction import extract_user
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot import dispatcher, DRAGONS
+from HyPerMenRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import mrjoker.modules.sql.approve_sql as sql
-from mrjoker.modules.helper_funcs.chat_status import user_admin
-from mrjoker.modules.logchannel import loggable
+import HyPerMenRobot.modules.sql.approve_sql as sql
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin
+from HyPerMenRobot.modules.logchannel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
