@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import mrjoker.modules.sql.users_sql as sql
-from mrjoker import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from mrjoker.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from mrjoker.modules.sql.users_sql import get_all_users
+import HyPerMenRobot.modules.sql.users_sql as sql
+from HyPerMenRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from HyPerMenRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from HyPerMenRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
