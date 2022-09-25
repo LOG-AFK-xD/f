@@ -2,13 +2,13 @@ from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
 
-from mrjoker import BOT_ID, MONGO_DB_URL
-from mrjoker import telethn as tbot
-from mrjoker.events import register
+from HyPerMenRobot import BOT_ID, MONGO_DB_URL
+from HyPerMenRobot import telethn as tbot
+from HyPerMenRobot.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URL)
-db = client["mjbot"]
+db = client["HyPerMenRobot"]
 approved_users = db.approve
 dbb = client["kaj"]
 poll_id = dbb.pollid
@@ -394,7 +394,7 @@ async def stop(event):
 
 
 __help__ = """
-**You can now send polls anonymously with Mr.Joker**
+**You can now send polls anonymously with HyPerMen**
 **Here is how you can do it:**
 **Parameters** -
 
