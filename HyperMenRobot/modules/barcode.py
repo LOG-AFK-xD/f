@@ -11,13 +11,13 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from mrjoker import telethn as tbot
-from mrjoker import *
-from mrjoker.events import register
+from  import telethn as tbot
+from HyPerMenRobot import *
+from HyPerMenRobot.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URL)
-db = client["mrjoker"]
+db = client["HyPerMenRobot"]
 approved_users = db.approve
 
 
