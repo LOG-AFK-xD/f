@@ -15,13 +15,13 @@ from HyPerMenRobot.modules.helper_funcs.chat_status import (
     user_admin,
     ADMIN_CACHE,
 )
-from mrjoker.hextra.admin_rights import (
+from HyPerMenRobot.hextra.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
 
-from mrjoker.modules.helper_funcs.extraction import (
+from HyPerMenRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
