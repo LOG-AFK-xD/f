@@ -9,15 +9,15 @@ from telegram.ext import (
     run_async,
 )
 
-from mrjoker import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import (
+from HyPerMenRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from mrjoker.modules.sql import cleaner_sql as sql
+from HyPerMenRobot.modules.sql import cleaner_sql as sql
 
 if ALLOW_EXCL:
     CMD_STARTERS = ("/", "!")
