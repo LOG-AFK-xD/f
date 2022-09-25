@@ -6,9 +6,9 @@ from gtts import gTTS
 from telegram import ChatAction
 from telegram.ext import run_async
 
-from mrjoker import dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_action, typing_action
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.alternate import send_action, typing_action
 
 
 @run_async
