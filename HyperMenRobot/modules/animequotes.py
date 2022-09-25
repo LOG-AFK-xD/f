@@ -1,10 +1,10 @@
 import random
-import mrjoker.modules.animequotesstring as animequotesstring
+import HyPerMenRobot.modules.animequotesstring as animequotesstring
 
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
-from mrjoker import dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
