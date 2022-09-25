@@ -9,7 +9,7 @@ from fontTools.ttLib import TTFont
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 from telethon.tl import functions, types
 
-from mrjoker.events import register
+from HyPerMenRobot.events import register
 
 COLORS = [
     "#F07975",
