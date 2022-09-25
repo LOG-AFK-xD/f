@@ -4,7 +4,7 @@ import requests
 import wget
 from pyrogram import filters
 
-from HyPerMenRobot import pbot as mrjoker 
+from HyPerMenRobot import pbot as HyPerMenRobot 
 from HyPerMenRobot.services.dk import get_arg
 
 
