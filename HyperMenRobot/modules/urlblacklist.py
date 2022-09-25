@@ -5,10 +5,10 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, Filters, MessageHandler, run_async
 
 import tldextract
-from mrjoker import LOGGER, dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from mrjoker.modules.sql import urlblacklist_sql as sql
+from HyPerMenRobot import LOGGER, dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from HyPerMenRobot.modules.sql import urlblacklist_sql as sql
 
 
 @run_async
