@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from mrjoker import DRAGONS, dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import (
+from HyPerMenRobot import DRAGONS, dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -25,9 +25,9 @@ from mrjoker.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.helper_funcs.alternate import send_message
-from mrjoker.modules.helper_funcs.alternate import typing_action
+from HyPerMenRobot.modules.logchannel import loggable
+from HyPerMenRobot.modules.helper_funcs.alternate import send_message
+from HyPerMenRobot.modules.helper_funcs.alternate import typing_action
 
 
 @run_async
