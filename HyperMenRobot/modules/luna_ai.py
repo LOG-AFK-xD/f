@@ -134,8 +134,8 @@ async def kaj(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("mrjoker", "Aco")
-        test = test.replace("Mrjoker", "Aco")
+        test = test.replace("HyPerMenRobot", "Aco")
+        test = test.replace("HyPerMenRobot", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
@@ -208,7 +208,7 @@ async def kaj(client, message):
             except:
                 return
         try:
-            await mrjoker.send_chat_action(message.chat.id, "typing")
+            await HyPerMenRobot.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
