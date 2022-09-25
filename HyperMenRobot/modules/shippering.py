@@ -1,5 +1,5 @@
-from mrjoker import pbot as app
-from mrjoker.utils.dbfunc import get_couple, save_couple
+from HyPerMenRobot import pbot as app
+from HyPerMenRobot.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
