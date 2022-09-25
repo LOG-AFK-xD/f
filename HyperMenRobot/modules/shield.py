@@ -6,17 +6,17 @@ import better_profanity
 import emoji
 import nude
 import requests
-from mrjoker import telethn as tbot
+from HyPerMenRobot import telethn as tbot
 from better_profanity import profanity
 from google_trans_new import google_translator
 from pymongo import MongoClient
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from mrjoker import BOT_ID
-from mrjoker.conf import get_str_key
-from mrjoker.events import register
-from mrjoker.modules.sql_extended.nsfw_watch_sql import (
+from HyPerMenRobot import BOT_ID
+from HyPerMenRobot.conf import get_str_key
+from HyPerMenRobot.events import register
+from HyPerMenRobot.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
