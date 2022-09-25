@@ -4,11 +4,11 @@ import requests
 import wget
 from pyrogram import filters
 
-from mrjoker import pbot as mrjoker 
-from mrjoker.services.dk import get_arg
+from HyPerMenRobot import pbot as mrjoker 
+from HyPerMenRobot.services.dk import get_arg
 
 
-@mrjoker.on_message(filters.command("saavn"))
+@HyPerMenRobot.on_message(filters.command("saavn"))
 async def song(client, message):
     message.chat.id
     message.from_user["id"]
@@ -42,7 +42,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from mrjoker import pbot as mrjoker
+from HyPerMenRobot import pbot as HyPerMenRobot
 
 ARQ = "https://thearq.tech/"
 
@@ -186,8 +186,8 @@ from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import *
 from youtube_search import YoutubeSearch
 
-from mrjoker.conf import get_str_key
-from mrjoker import pbot
+from HyPerMenRobot.conf import get_str_key
+from HyPerMenRobot import pbot
 
 @pbot.on_message(filters.command(["video"]))
 async def video(pbot, message):
@@ -245,8 +245,8 @@ import lyricsgenius
 from pyrogram import filters
 from tswift import Song
 
-from mrjoker.conf import get_str_key
-from mrjoker import pbot
+from HyPerMenRobot.conf import get_str_key
+from HyPerMenRobot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
@@ -334,7 +334,7 @@ async def lyrics(client, message):
             "lyrics.txt",
             reply_to_msg_id=message.message_id,
         )
-        os.remove("mjlyrics.txt")
+        os.remove("Hmlyrics.txt")
     else:
         await lel.edit(
             f"**Search query**: \n`{artist} - {song}`\n\n```{songs.lyrics}```"
