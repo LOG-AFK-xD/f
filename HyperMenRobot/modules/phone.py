@@ -3,9 +3,9 @@ import json
 import requests
 from telegram.ext import CommandHandler, run_async
 
-from mrjoker import dispatcher
-from mrjoker.modules.helper_funcs.alternate import send_message
-from mrjoker.modules.helper_funcs.chat_status import user_admin
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.helper_funcs.alternate import send_message
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin
 
 
 @run_async
