@@ -1,9 +1,9 @@
 from telegram.ext import run_async
 
-from mrjoker import dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_message
-from mrjoker.modules.helper_funcs.chat_status import user_admin
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.alternate import send_message
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin
 
 
 @run_async
