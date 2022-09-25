@@ -1,12 +1,12 @@
 import os
 
-from mrjoker.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
+from HyPerMenRobot.modules.sql_extended.night_mode_sql import add_nightmode, rmnightmode, get_all_chat_id, is_nightmode_indb
 from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
-from mrjoker.events import register
-from mrjoker import OWNER_ID
-from mrjoker import telethn as tbot
+from HyPerMenRobot.events import register
+from HyPerMenRobot import OWNER_ID
+from HyPerMenRobot import telethn as tbot
 from telethon import *
 from telethon import Button, custom, events
 
