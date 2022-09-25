@@ -5,8 +5,8 @@ from telethon import events
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from mrjoker import DEV_USERS, telethn
-from mrjoker.modules.helper_funcs.telethn.chatstatus import (
+from HyPerMenRobot import DEV_USERS, telethn
+from HyPerMenRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
