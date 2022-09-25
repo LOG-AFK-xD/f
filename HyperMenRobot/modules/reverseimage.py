@@ -10,9 +10,9 @@ from typing import List
 from telegram import ParseMode, InputMediaPhoto, Update, Bot, TelegramError
 from telegram.ext import run_async
 
-from mrjoker import dispatcher
+from HyPerMenRobot import dispatcher
 
-from mrjoker.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
 
 
 opener = urllib.request.build_opener()
