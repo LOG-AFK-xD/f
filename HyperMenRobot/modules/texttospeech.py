@@ -1,6 +1,6 @@
-from mrjoker import *
-from mrjoker import telethn as tbot
-from mrjoker.events import register
+from HyPerMenRobot import *
+from HyPerMenRobot import telethn as tbot
+from HyPerMenRobot.events import register
 from gtts import gTTS
 from gtts import gTTSError
 from telethon.tl import functions
