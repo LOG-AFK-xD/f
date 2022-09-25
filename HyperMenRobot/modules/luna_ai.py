@@ -8,9 +8,9 @@ from asyncio import gather, get_event_loop, sleep
 from googletrans import Translator as google_translator
 from pyrogram import filters, idle
 
-from mrjoker import BOT_ID, pbot as mrjoker
-from mrjoker.hextra.aichat import add_chat, get_session, remove_chat
-from mrjoker.pyro.pluginshelper import admins_only, edit_or_reply
+from HyPerMenRobot import BOT_ID, pbot as mrjoker
+from HyPerMenRobot.hextra.aichat import add_chat, get_session, remove_chat
+from HyPerMenRobot.pyro.pluginshelper import admins_only, edit_or_reply
 
 translator = google_translator()
 
@@ -35,11 +35,11 @@ async def fetch(url):
                         data = await resp.text()
             return data
     except:
-        print("Mr.Joker AI response Timeout")
+        print("HyPerMen AI response Timeout")
         return
 
 
-mrjoker_chats = []
+HyPerMenRobot_chats = []
 en_chats = []
 
 from Python_ARQ import ARQ
@@ -52,7 +52,7 @@ aiohttpsession = ClientSession()
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
 
-@mrjoker.on_message(
+@HyPerMenRobot.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
@@ -69,20 +69,20 @@ async def kaj(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Mr.JokerAI Already Activated In This Chat")
+            await lel.edit("HyPerMen AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Mr.Joker AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"HyPerMen AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Mr.Joker AI Was Not Activated In This Chat")
+            await lel.edit("HyPerMen AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Mr.Joker AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"HyPerMen AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -97,18 +97,18 @@ async def kaj(_, message):
             "I only recognize `/chatbot on` and /chatbot `off only`"
         )
 
-@mrjoker.on_message(filters.command("repo") & ~filters.edited)
+@HyPerMenRobot.on_message(filters.command("repo") & ~filters.edited)
 async def repo(_, message):
     await message.reply_text(
-        "[GitHub](https://github.com/kjeymax/MR-JOKER_BOT)"
-        + " | [HITECH Group](t.me/hitechlkgroup)",
+        "[GitHub](https://github.com/official-afk-xD/HyPerMen-Robot)"
+        + " | [Support](t.me/Team_Bot_Support)",
         disable_web_page_preview=True,
     )
 
         
         
         
-@mrjoker.on_message(
+@HyPerMenRobot.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -139,12 +139,12 @@ async def kaj(client, message):
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Mrjoker")
-        response = response.replace("aco", "Mrjoker")
+        response = response.replace("Aco", "HyPerMenRobot")
+        response = response.replace("aco", "HyPerMenRobot")
 
         pro = response
         try:
-            await mrjoker.send_chat_action(message.chat.id, "typing")
+            await HyPerMenRobot.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -196,10 +196,10 @@ async def kaj(client, message):
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Mrjoker")
-        response = response.replace("aco", "Mrjoker")
-        response = response.replace("Luna", "Mrjoker")
-        response = response.replace("luna", "Mrjoker")
+        response = response.replace("Aco", "HyPerMenRobot")
+        response = response.replace("aco", "HyPerMenRobot")
+        response = response.replace("Luna", "HyPerMenRobot")
+        response = response.replace("luna", "HyPerMenRobot")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -214,7 +214,7 @@ async def kaj(client, message):
             return
 
 
-@mrjoker.on_message(
+@HyPerMenRobot.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def kaj(client, message):
@@ -266,22 +266,22 @@ async def kaj(client, message):
     test = test.replace("Mrjoker", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Mrjoker")
-    response = response.replace("aco", "Mrjoker")
+    response = response.replace("Aco", "HyPerMenRobot")
+    response = response.replace("aco", "HyPerMenRobot")
 
     pro = response
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, dest=lan)
         pro = pro.text
     try:
-        await mrjoker.send_chat_action(message.chat.id, "typing")
+        await HyPerMenRobot.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
-@mrjoker.on_message(
-    filters.regex("Mrjoker|mrjoker|mrjoker|MRJOKER|mrjoker")
+@HyPerMenRobot.on_message(
+    filters.regex("HyPerMenRobot|HyPerMenRobot|HyPerMenRobot|HYPERMENROBOT|HyPerMenRobot")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -334,11 +334,11 @@ async def kaj(client, message):
         except:
             return
 
-    test = test.replace("mrjoker", "Aco")
-    test = test.replace("Mrjoker", "Aco")
+    test = test.replace("HyPerMenRobot", "Aco")
+    test = test.replace("HyPerMenRobot", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Mrjoker")
-    response = response.replace("aco", "Mrjoker")
+    response = response.replace("Aco", "HyPerMenRobot")
+    response = response.replace("aco", "HyPerMenRobot")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -348,7 +348,7 @@ async def kaj(client, message):
         except Exception:
             return
     try:
-        await mrjoker.send_chat_action(message.chat.id, "typing")
+        await HyPerMenRobot.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
