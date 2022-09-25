@@ -7,10 +7,10 @@ from telegram.ext import Filters, CommandHandler
 from telegram.ext.dispatcher import run_async, CallbackContext
 
 import random
-import mrjoker.modules.sql.users_sql as sql
-from mrjoker.modules.helper_funcs.filters import CustomFilters
-from mrjoker import dispatcher, OWNER_ID, LOGGER
-from mrjoker.modules.disable import DisableAbleCommandHandler
+import HyPerMenRobot.modules.sql.users_sql as sql
+from HyPerMenRobot.modules.helper_funcs.filters import CustomFilters
+from HyPerMenRobot import dispatcher, OWNER_ID, LOGGER
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
 USERS_GROUP = 5
 
 
