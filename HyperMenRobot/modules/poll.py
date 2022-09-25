@@ -10,7 +10,7 @@ client = MongoClient()
 client = MongoClient(MONGO_DB_URL)
 db = client["HyPerMenRobot"]
 approved_users = db.approve
-dbb = client["kaj"]
+dbb = client["xD"]
 poll_id = dbb.pollid
 
 
