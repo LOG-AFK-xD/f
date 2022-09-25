@@ -1,6 +1,6 @@
-from mrjoker import telethn as tbot
+from HyPerMenRobot import telethn as tbot
 import os
-from mrjoker.events import register
+from HyPerMenRobot.events import register
 import secureme
 
 @register(pattern="^/encrypt ?(.*)")
