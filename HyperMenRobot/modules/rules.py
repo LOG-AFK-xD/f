@@ -1,9 +1,9 @@
 from typing import Optional
 
-import mrjoker.modules.sql.rules_sql as sql
-from mrjoker import dispatcher
-from mrjoker.modules.helper_funcs.chat_status import user_admin
-from mrjoker.modules.helper_funcs.string_handling import markdown_parser
+import HyPerMenRobot.modules.sql.rules_sql as sql
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin
+from HyPerMenRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -60,7 +60,7 @@ def send_rules(update, chat_id, from_pm=False):
                 [
                     [
                         InlineKeyboardButton(
-                            text="𝗥𝘂𝗹𝗲𝘀 📜", url=f"t.me/{bot.username}?start={chat_id}"
+                            text="Rules 📜", url=f"t.me/{bot.username}?start={chat_id}"
                         )
                     ]
                 ]
