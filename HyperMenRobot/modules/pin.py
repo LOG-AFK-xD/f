@@ -7,15 +7,15 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-from mrjoker import dispatcher
-from mrjoker.modules.helper_funcs.chat_status import (
+from HyPerMenRobot import dispatcher
+from HyPerMenRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     user_admin,
     can_pin,
     can_delete
 )
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.sql import pin_sql as sql
+from HyPerMenRobot.modules.logchannel import loggable
+from HyPerMenRobot.modules.sql import pin_sql as sql
 
 
 PMW_GROUP = 13
