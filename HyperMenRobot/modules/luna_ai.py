@@ -57,7 +57,7 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 )
 @admins_only
 async def kaj(_, message):
-    global mrjoker_chats
+    global HyPerMenRobot_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
