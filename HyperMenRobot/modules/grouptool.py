@@ -2,11 +2,11 @@ import os
 
 from pyrogram import filters
 
-from mrjoker.pyro.pluginshelper import member_permissions
-from mrjoker import pbot as mrjoker
+from HyPerMenRobot.pyro.pluginshelper import member_permissions
+from HyPerMenRobot import pbot as HyPerMenRobot
 
 
-@mrjoker.on_message(filters.command("setgtitle") & ~filters.private)
+@HyPerMenRobot.on_message(filters.command("setgtitle") & ~filters.private)
 async def set_chat_title(_, message):
     try:
         chat_id = message.chat.id
@@ -29,7 +29,7 @@ async def set_chat_title(_, message):
         await message.reply_text(e)
 
 
-@mrjoker.on_message(filters.command("settitle") & ~filters.private)
+@HyPerMenRobot.on_message(filters.command("settitle") & ~filters.private)
 async def set_user_title(_, message):
     try:
         chat_id = message.chat.id
@@ -54,7 +54,7 @@ async def set_user_title(_, message):
         await message.reply_text(e)
 
 
-@mrjoker.on_message(filters.command("setgpic") & ~filters.private)
+@HyPerMenRobot.on_message(filters.command("setgpic") & ~filters.private)
 async def set_chat_photo(_, message):
     try:
         chat_id = message.chat.id
@@ -79,7 +79,7 @@ async def set_chat_photo(_, message):
         await message.reply_text(e)
         
 
-@mrjoker.on_message(filters.command("setdescription") & ~filters.private)
+@HyPerMenRobot.on_message(filters.command("setdescription") & ~filters.private)
 async def set_chat_description(_, message):
     try:
         chat_id = message.chat.id
