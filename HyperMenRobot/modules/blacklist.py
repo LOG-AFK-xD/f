@@ -6,18 +6,18 @@ from telegram.error import BadRequest
 from telegram.ext import CommandHandler, MessageHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-import mrjoker.modules.sql.blacklist_sql as sql
-from mrjoker import dispatcher, LOGGER
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from mrjoker.modules.helper_funcs.extraction import extract_text
-from mrjoker.modules.helper_funcs.misc import split_message
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.warns import warn
-from mrjoker.modules.helper_funcs.string_handling import extract_time
-from mrjoker.modules.connection import connected
-from mrjoker.modules.sql.approve_sql import is_approved
-from mrjoker.modules.helper_funcs.alternate import send_message, typing_action
+import HyPerMenRobot.modules.sql.blacklist_sql as sql
+from HyPerMenRobot import dispatcher, LOGGER
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from HyPerMenRobot.modules.helper_funcs.extraction import extract_text
+from HyPerMenRobot.modules.helper_funcs.misc import split_message
+from HyPerMenRobot.modules.logchannel import loggable
+from HyPerMenRobot.modules.warns import warn
+from HyPerMenRobot.modules.helper_funcs.string_handling import extract_time
+from HyPerMenRobot.modules.connection import connected
+from HyPerMenRobot.modules.sql.approve_sql import is_approved
+from HyPerMenRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
