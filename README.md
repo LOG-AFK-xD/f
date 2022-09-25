@@ -19,6 +19,15 @@
 
 
 ## Deploy
+
+[![Sourcery](https://img.shields.io/badge/Sourcery-enabled-brightgreen)](https://sourcery.ai)
+
+|Deploy Via Bot|  Deploy Via Web|
+|--|--|
+| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=dmNreW91L0dlZXpQcm9qZWN0cyBtYXN0ZXI) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://geezram.now.sh) |
+
+
+
 [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Official-afk-xD/HyPerMen-Robot)
 
 [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
