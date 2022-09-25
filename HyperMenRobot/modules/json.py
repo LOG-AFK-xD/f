@@ -2,8 +2,8 @@ import io
 
 from telethon import types
 from telethon.tl import functions, types
-from mrjoker.events import register
-from mrjoker import telethn
+from HyPerMenRobot.events import register
+from HyPerMenRobot import telethn
 
 
 async def is_register_admin(chat, user):
