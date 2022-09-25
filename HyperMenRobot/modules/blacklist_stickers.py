@@ -7,16 +7,16 @@ from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandle
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import mrjoker.modules.sql.blsticker_sql as sql
-from mrjoker import LOGGER, dispatcher
-from mrjoker.modules.connection import connected
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_message
-from mrjoker.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from mrjoker.modules.helper_funcs.misc import split_message
-from mrjoker.modules.helper_funcs.string_handling import extract_time
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.warns import warn
+import HyPerMenRobot.modules.sql.blsticker_sql as sql
+from HyPerMenRobot import LOGGER, dispatcher
+from HyPerMenRobot.modules.connection import connected
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.alternate import send_message
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from HyPerMenRobot.modules.helper_funcs.misc import split_message
+from HyPerMenRobot.modules.helper_funcs.string_handling import extract_time
+from HyPerMenRobot.modules.logchannel import loggable
+from HyPerMenRobot.modules.warns import warn
 
 
 @run_async
