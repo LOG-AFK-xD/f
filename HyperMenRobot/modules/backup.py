@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import mrjoker.modules.sql.notes_sql as sql
-from mrjoker import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from mrjoker.__main__ import DATA_IMPORT
-from mrjoker.modules.helper_funcs.chat_status import user_admin
-from mrjoker.modules.helper_funcs.alternate import typing_action
+import HyPerMenRobot.modules.sql.notes_sql as sql
+from HyPerMenRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from HyPerMenRobot.__main__ import DATA_IMPORT
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin
+from HyPerMenRobot.modules.helper_funcs.alternate import typing_action
 
-# from mrjoker.modules.rules import get_rules
-import mrjoker.modules.sql.rules_sql as rulessql
+# from HyPerMenRobot.modules.rules import get_rules
+import HyPerMenRobot.modules.sql.rules_sql as rulessql
 
-# from mrjoker.modules.sql import warns_sql as warnssql
-import mrjoker.modules.sql.blacklist_sql as blacklistsql
-from mrjoker.modules.sql import disable_sql as disabledsql
+# from HyPerMenRobot.modules.sql import warns_sql as warnssql
+import HyPerMenRobot.modules.sql.blacklist_sql as blacklistsql
+from HyPerMenRobot.modules.sql import disable_sql as disabledsql
 
-# from mrjokert.modules.sql import cust_filters_sql as filtersql
-# import mrjoker.modules.sql.welcome_sql as welcsql
-import mrjoker.modules.sql.locks_sql as locksql
-from mrjoker.modules.connection import connected
+# from HyPerMenRobot.modules.sql import cust_filters_sql as filtersql
+# import HyPerMenRobot.modules.sql.welcome_sql as welcsql
+import HyPerMenRobot.modules.sql.locks_sql as locksql
+from HyPerMenRobot.modules.connection import connected
 
 
 @run_async
