@@ -27,12 +27,12 @@ from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import escape_markdown
 from tswift import Song
 
-from mrjoker import DEV_USERS, OWNER_ID, dispatcher
-from mrjoker.__main__ import GDPR, STATS
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_action, typing_action
-from mrjoker.modules.helper_funcs.chat_status import user_admin
-from mrjoker.modules.helper_funcs.filters import CustomFilters
+from HyPerMenRobot import DEV_USERS, OWNER_ID, dispatcher
+from HyPerMenRobot.__main__ import GDPR, STATS
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.alternate import send_action, typing_action
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin
+from HyPerMenRobot.modules.helper_funcs.filters import CustomFilters
 
 
 @run_async
