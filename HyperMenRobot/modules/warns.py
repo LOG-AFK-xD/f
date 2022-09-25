@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from mrjoker import TIGERS, WOLVES, dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import (
+from HyPerMenRobot import TIGERS, WOLVES, dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from mrjoker.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from mrjoker.modules.helper_funcs.extraction import (
+from HyPerMenRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from mrjoker.modules.helper_funcs.filters import CustomFilters
-from mrjoker.modules.helper_funcs.misc import split_message
-from mrjoker.modules.helper_funcs.string_handling import split_quotes
-from mrjoker.modules.logchannel import loggable
-from mrjoker.modules.sql import warns_sql as sql
+from HyPerMenRobot.modules.helper_funcs.filters import CustomFilters
+from HyPerMenRobot.modules.helper_funcs.misc import split_message
+from HyPerMenRobot.modules.helper_funcs.string_handling import split_quotes
+from HyPerMenRobot.modules.logchannel import loggable
+from HyPerMenRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -45,7 +45,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from mrjoker.modules.sql.approve_sql import is_approved
+from HyPerMenRobot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
