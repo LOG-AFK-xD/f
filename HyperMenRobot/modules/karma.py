@@ -1,13 +1,13 @@
-from mrjoker import pbot as mrjoker
-from mrjoker.utils.errors import capture_err
-from mrjoker.function.dbfun import (
+from HyPerMenRobot import pbot as mrjoker
+from HyPerMenRobot.utils.errors import capture_err
+from HyPerMenRobot.function.dbfun import (
     update_karma,
     get_karma,
     get_karmas,
     int_to_alpha,
     alpha_to_int,
 )
-from mrjoker.utils.filter_groups import karma_positive_group, karma_negative_group
+from HyPerMenRobot.utils.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
 
 
@@ -15,15 +15,15 @@ regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|go
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
 
-@mrjoker.on_message(
+@HyPerMenRobot.on_message(
     filters.text
     & filters.group
     & filters.incoming
     & filters.reply
     & filters.regex(regex_upvote)
     & ~filters.via_bot
-    & ~filters.bot
-    & ~filters.edited,
+    & ~filters.bot,
+
     group=karma_positive_group,
 )
 @capture_err
@@ -48,15 +48,14 @@ async def upvote(_, message):
     )
 
 
-@mrjoker.on_message(
+@HyPerMenRobot.on_message(
     filters.text
     & filters.group
     & filters.incoming
     & filters.reply
     & filters.regex(regex_downvote)
     & ~filters.via_bot
-    & ~filters.bot
-    & ~filters.edited,
+    & ~filters.bot,
     group=karma_negative_group,
 )
 @capture_err
@@ -81,7 +80,7 @@ async def downvote(_, message):
     )
 
 
-@mrjoker.on_message(filters.command("karma") & filters.group)
+@HyPerMenRobot.on_message(filters.command("karma") & filters.group)
 @capture_err
 async def karma(_, message):
     chat_id = message.chat.id
