@@ -22,20 +22,20 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, mention_markdown
 
-import mrjoker.modules.sql.feds_sql as sql
-from mrjoker import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, TIGERS, WOLVES, dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_message
-from mrjoker.modules.helper_funcs.chat_status import is_user_admin
-from mrjoker.modules.helper_funcs.extraction import (
+import HyPerMenRobot.modules.sql.feds_sql as sql
+from HyPerMenRobot import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, TIGERS, WOLVES, dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.alternate import send_message
+from HyPerMenRobot.modules.helper_funcs.chat_status import is_user_admin
+from HyPerMenRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from mrjoker.modules.helper_funcs.string_handling import markdown_parser
+from HyPerMenRobot.modules.helper_funcs.string_handling import markdown_parser
 
-# Hello bot owner, I spended for feds many hours of my life, Please don't remove this if you still respect lkhitech™️ and Joker  too
-# Federation by MrJoker 2020 - 2021
+# Hello bot owner, I spended for feds many hours of my life, Please don't remove this if you still respect @Official_afk_xD and HyPerMen  too
+# Federation by HyPerMen 2022 - 2023
 
 FBAN_ERRORS = {
     "User is an administrator of the chat",
