@@ -14,8 +14,8 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import mrjoker.modules.sql.global_bans_sql as sql
-from mrjoker import (
+import HyPerMenRobot.modules.sql.global_bans_sql as sql
+from HyPerMenRobot import (
     DEMONS,
     DEV_USERS,
     DRAGONS,
@@ -34,9 +34,9 @@ from mrjoker.modules.helper_funcs.chat_status import (
     support_plus,
     user_admin,
 )
-from mrjoker.modules.helper_funcs.extraction import extract_user, extract_user_and_text
-from mrjoker.modules.helper_funcs.misc import send_to_list
-from mrjoker.modules.sql.users_sql import get_user_com_chats
+from HyPerMenRobot.modules.helper_funcs.extraction import extract_user, extract_user_and_text
+from HyPerMenRobot.modules.helper_funcs.misc import send_to_list
+from HyPerMenRobot.modules.sql.users_sql import get_user_com_chats
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -544,7 +544,7 @@ you and your groups by removing spam flooders as quickly as possible.
 
 This also integrates @Spamwatch API to remove Spammers as much as possible from your chatroom!
 *What is SpamWatch?*
-SpamWatch maintains a large constantly updated ban-list of spambots, trolls, bitcoin spammers and unsavoury characters[.](https://telegra.ph/file/6525d89de5b72003d80fa.png)
+SpamWatch maintains a large constantly updated ban-list of spambots, trolls, bitcoin spammers and unsavoury characters[.](https://telegra.ph/file/953aea8c30bc08cd99c3a.png)
 Constantly help banning spammers off from your group automatically So, you wont have to worry about spammers storming your group.
 *Note:* Users can appeal spamwatch bans at @SpamwatchSupport
 """
