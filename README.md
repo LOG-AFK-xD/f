@@ -24,16 +24,12 @@
 
 |Deploy Via Bot|  Deploy Via Web|
 |--|--|
-| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=https://github.com/LOG-AFK-xD/f) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/LOG-AFK-xD/f) |
+| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=https://github.com/LOG-AFK-xD/f) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Official-afk-xD/HyPerMen-Robot) |
 
 
-
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Official-afk-xD/HyPerMen-Robot)
-
-[![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
-
-[![Deploy to Qovery](https://img.shields.io/badge/Deploy-Qovery-6EC0D9.svg)](https://qovery.com)
-
+|Deploy Railway |  Deploy To Qovery|
+|--|--|
+| [![Deploy](https://railway.app/button.svg)](https://railway.app) | [![Deploy](https://img.shields.io/badge/Deploy-Qovery-6EC0D9.svg)](https://qovery.com) |
 
 
 
