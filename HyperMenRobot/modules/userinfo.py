@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from mrjoker import (
+from HyPerMenRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from mrjoker import (
     dispatcher,
     sw,
 )
-from mrjoker.__main__ import STATS, TOKEN, USER_INFO
-import mrjoker.modules.sql.userinfo_sql as sql
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.sql.global_bans_sql import is_user_gbanned
-from mrjoker.modules.sql.afk_sql import is_afk, check_afk_status
-from mrjoker.modules.sql.users_sql import get_user_num_chats
-from mrjoker.modules.helper_funcs.chat_status import sudo_plus
-from mrjoker.modules.helper_funcs.extraction import extract_user
-from mrjoker import telethn as mrjokerTelethonClient
+from HyPerMenRobot.__main__ import STATS, TOKEN, USER_INFO
+import HyPerMenRobot.modules.sql.userinfo_sql as sql
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.sql.global_bans_sql import is_user_gbanned
+from HyPerMenRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from HyPerMenRobot.modules.sql.users_sql import get_user_num_chats
+from HyPerMenRobot.modules.helper_funcs.chat_status import sudo_plus
+from HyPerMenRobot.modules.helper_funcs.extraction import extract_user
+from HyPerMenRobot import telethn as mrjokerTelethonClient
 
 
 def no_by_per(totalhp, percentage):
