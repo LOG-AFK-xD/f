@@ -7,12 +7,12 @@ from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 from telegram.utils.helpers import mention_html
 
-from mrjoker import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
-from mrjoker.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitelist_plus
-from mrjoker.modules.helper_funcs.extraction import extract_user
-from mrjoker.modules.logchannel import gloggable
+from HyPerMenRobot import DEMONS, DEV_USERS, DRAGONS, OWNER_ID, TIGERS, WOLVES, dispatcher
+from HyPerMenRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus, whitelist_plus
+from HyPerMenRobot.modules.helper_funcs.extraction import extract_user
+from HyPerMenRobot.modules.logchannel import gloggable
 
-ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "mrjoker/elevated_users.json")
+ELEVATED_USERS_FILE = os.path.join(os.getcwd(), "HyPerMenRobot/elevated_users.json")
 
 
 def check_user_id(user_id: int, context: CallbackContext) -> Optional[str]:
@@ -617,7 +617,7 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>Mrjoker Union Members ⚡️:</b>\n"
+    reply = "<b>HyPerMen Union Members ⚡️:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
