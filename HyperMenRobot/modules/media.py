@@ -66,7 +66,7 @@ async def download_song(url):
     return song_name
 
 
-@mrjoker.on_message(filters.command("deezer"))
+@HyPerMenRobot.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("**Downloading your song Deezer** ,\n**Plz wait** ⏳️")
@@ -97,8 +97,8 @@ from pyrogram import filters
 from pytube import YouTube
 from youtubesearchpython import VideosSearch
 
-from mrjoker import LOGGER, pbot
-from mrjoker.utils.ut import get_arg
+from HyPerMenRobot import LOGGER, pbot
+from HyPerMenRobot.utils.ut import get_arg
 
 
 def yt_search(song):
