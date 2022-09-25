@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from mrjoker import StartTime, dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.chat_status import sudo_plus
+from HyPerMenRobot import StartTime, dispatcher
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.chat_status import sudo_plus
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
@@ -80,7 +80,7 @@ def ping(update: Update, context: CallbackContext):
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "MR.JOker!!\n"
+        "HyPerMen!!\n"
         "<b>Time Taken:</b> <code>{}</code>\n"
         "<b>Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML,
