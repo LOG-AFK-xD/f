@@ -3,9 +3,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from mrjoker import *
-from mrjoker import telethn as tbot
-from mrjoker.events import register
+from HyPerMenRobot import *
+from HyPerMenRobot import telethn as tbot
+from HyPerMenRobot.events import register
 
 
 async def is_register_admin(chat, user):
