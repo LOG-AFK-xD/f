@@ -24,7 +24,7 @@
 
 |Deploy Via Bot|  Deploy Via Web|
 |--|--|
-| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=https://github.com/LOG-AFK-xD/f) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)]https://github.com/LOG-AFK-xD/f() |
+| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=https://github.com/LOG-AFK-xD/f) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://github.com/LOG-AFK-xD/f) |
 
 
 
