@@ -24,9 +24,9 @@ from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
 
-from mrjoker.utils.inlinehelper import *
-from mrjoker.utils.plh import fetch, json_prettify
-from mrjoker import pbot as app, OPENWEATHERMAP_ID, TIME_API_KEY
+from HyPerMenRobot.utils.inlinehelper import *
+from HyPerMenRobot.utils.plh import fetch, json_prettify
+from HyPerMenRobot import pbot as app, OPENWEATHERMAP_ID, TIME_API_KEY
 
 dictionary = PyDictionary()
 
@@ -52,9 +52,9 @@ __mod_name__ = "Inline Mode"
 __help__ = """
 ⚊❮❮❮❮ ｢INLINE BOT SERVICE」❯❯❯❯⚊
 
-**I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline**[SDSD.](https://telegra.ph/file/7b406588473aa764e58db.jpg)
+**I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline**[HyPerMen](https://telegra.ph/file/f3e6bed7a500e8d92eee8.jpg)
 ──「 Syntax 」──
-@Mrjokerlk_bot [command] [query]
+@HypermenRobot [command] [query]
 
 ╔ **Commands Available**
 ╠ `alive` - Check Bot's Stats.
@@ -95,11 +95,11 @@ __MODULE__ = "Inline Mode"
 __HELP__ = """
 ⚊❮❮❮❮ ｢INLINE BOT SERVICE」❯❯❯❯⚊
 
-[.](https://telegra.ph/file/7b406588473aa764e58db.jpg)
+[.](https://telegra.ph/file/f3e6bed7a500e8d92eee8.jpg)
 `I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline`
    >> **Syntax** <<
    
-@Mrjokerlk_bot [command] [query]
+@HypermenRobot [command] [query]
 
    >> **Commands Available** <<
 🔹 **alive** - __Check Bot's Stats.__
@@ -887,7 +887,7 @@ async def inline_query_handler(client, query):
                 + app_link
                 + "'>View in Play Store</a>"
             )
-            app_details += "\n\n⚊❮❮❮❮ ｢@lkhitech」❯❯❯❯⚊"
+            app_details += "\n\n⚊❮❮❮❮ ｢@Official_Afk_xD」❯❯❯❯⚊"
             rip.append(
                 InlineQueryResultArticle(
                     title=f"Datails of {app_name}",
