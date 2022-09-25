@@ -1,14 +1,14 @@
 import os
 
-from mrjoker import telethn as tbot
-from mrjoker.events import register
+from HyPerMenRobot import telethn as tbot
+from HyPerMenRobot.events import register
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
 
-mj = "mj"
+Hm = "Hm"
 telegraph = Telegraph()
-r = telegraph.create_account(short_name=mj)
+r = telegraph.create_account(short_name=Hm)
 auth_url = r["auth_url"]
 TMP_DOWNLOAD_DIRECTORY = "./"
 
