@@ -1,6 +1,6 @@
-from mrjoker import telethn as tbot
-from mrjoker import MONGO_DB_URL
-from mrjoker.events import register
+from HyPerMenRobot import telethn as tbot
+from HyPerMenRobot import MONGO_DB_URL
+from HyPerMenRobot.events import register
 from telethon import *
 from telethon.tl import functions
 from pymongo import MongoClient
@@ -9,7 +9,7 @@ import subprocess
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URL)
-db = client["mrjoker"]
+db = client["HyPerMenRobot"]
 approved_users = db.approve
 
 
