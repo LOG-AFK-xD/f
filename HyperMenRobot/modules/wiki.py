@@ -4,7 +4,7 @@ from telegram.ext import CallbackContext, run_async
 from wikipedia.exceptions import DisambiguationError, PageError
 
 from mrjoker import dispatcher
-from mrjoker.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
