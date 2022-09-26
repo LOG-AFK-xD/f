@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from mrjoker.modules.helper_funcs.misc import is_module_loaded
+from HyPerMenRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from mrjoker import EVENT_LOGS, LOGGER, dispatcher
-    from mrjoker.modules.helper_funcs.chat_status import user_admin
-    from mrjoker.modules.sql import log_channel_sql as sql
+    from HyPerMenRobot import EVENT_LOGS, LOGGER, dispatcher
+    from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin
+    from HyPerMenRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
