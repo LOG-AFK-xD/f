@@ -24,7 +24,7 @@
 
 |Deploy Via Bot|  Deploy Via Web|
 |--|--|
-| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=https://github.com/LOG-AFK-xD/f) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Official-afk-xD/HyPerMen-Robot) |
+| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://telegram.dog/XTZ_HerokuBot?start=https://github.com/LOG-AFK-xD/f) | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LOG-AFK-xD/f) |
 
 
 |Deploy Railway |  Deploy To Qovery|
