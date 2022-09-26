@@ -6,9 +6,9 @@ import glob
 import time
 import requests
 
-from mrjoker.events import register
-from mrjoker import OWNER_ID
-from mrjoker import telethn as tbot
+from HyPerMenRobot.events import register
+from HyPerMenRobot import OWNER_ID
+from HyPerMenRobot import telethn as tbot
 from PIL import Image, ImageDraw, ImageFont
 from telethon.tl.types import InputMessagesFilterPhotos
 from io import BytesIO
@@ -271,7 +271,7 @@ async def lego(event):
     pointsize = 500
     fillcolor = "black"
     shadowcolor = "blue"
-    fnt = glob.glob("./mrjoker/pack/*")
+    fnt = glob.glob("./HyPerMenRobot/pack/*")
     randf = random.choice(fnt)
     font = ImageFont.truetype(randf, 120)
     w, h = draw.textsize(text, font=font)
@@ -281,14 +281,14 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=1, stroke_fill="black")
-    fname="LogoMakeBy_MRJOKER.png"
+    fname="LogoMakeBy_HyPerMenRobot.png"
     img.save(fname, "png")
-    await tbot.send_file(event.chat_id, file=fname, caption="🤡")         
+    await tbot.send_file(event.chat_id, file=fname, caption="☀️")         
     await pesan.delete()
     if os.path.exists(fname):
             os.remove(fname)
  except Exception as e:
-    await event.reply(f'Error, Report @lkhitech, {e}')
+    await event.reply(f'Error, Report @Team_Bot_Support, {e}')
 
 
 
@@ -305,16 +305,16 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!🤡')
+ await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./mrjoker/pack/blackimg.jpg')
+    img = Image.open('./HyPerMenRobot/pack/blackimg.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./mrjoker/pack/Knife.otf", 1000)
+    font = ImageFont.truetype("./HyPerMenRobot/pack/Knife.otf", 1000)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -322,13 +322,13 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="yellow", stroke_width=25, stroke_fill="white")
-    fname2 = "LogoMakeBy_MRJOKER.png"
+    fname2 = "LogoMakeBy_HyPerMenRobot.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="🤡")
+    await tbot.send_file(event.chat_id, fname2, caption="⚠️")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @lkhitech, {e}')
+   await event.reply(f'Error Report @Team_Bot_Support, {e}')
 
 
 
@@ -345,16 +345,16 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!🤡')
+ await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./mrjoker/pack/fjoker.jpg')
+    img = Image.open('./HyPerMenRobot/pack/fHyPerMenRobot.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./mrjoker/pack/Gothic-Joker.ttf", 500)
+    font = ImageFont.truetype("./mrjoker/pack/Gothic-Hyper.ttf", 500)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -362,13 +362,13 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="DarkViolet")
-    fname2 = "LogoMakeBy_MRJOKER.png"
+    fname2 = "LogoMakeBy_HyPerMenRobot.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="🤡")
+    await tbot.send_file(event.chat_id, fname2, caption="📌")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @lkhitech, {e}')
+   await event.reply(f'Error Report @Team_Bot_Support, {e}')
 
    
 @register(pattern="^/blogo ?(.*)")
@@ -383,16 +383,16 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!🤡')
+ await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./mrjoker/pack/2.jpg')
+    img = Image.open('./HyPerMenRobot/pack/2.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
     fillcolor = "PaleGreen"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./mrjoker/pack/Maghrib.ttf", 800)
+    font = ImageFont.truetype("./HyPerMenRobot/pack/Maghrib.ttf", 800)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
@@ -400,13 +400,13 @@ async def lego(event):
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="DarkMagenta", stroke_width=0, stroke_fill="Gainsboro")
-    fname2 = "LogoMakeBy_MRJOKER.png"
+    fname2 = "LogoMakeBy_HyPerMenRobot.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="🤡")
+    await tbot.send_file(event.chat_id, fname2, caption="✅")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
-   await event.reply(f'Error Report @lkhitech, {e}')   
+   await event.reply(f'Error Report @Team_Bot_Update, {e}')   
    
    
    
