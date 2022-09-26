@@ -17,10 +17,10 @@ from telegram.ext import (CallbackContext, CallbackQueryHandler, CommandHandler,
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from mrjoker.modules.helper_funcs.filters import CustomFilters
-from mrjoker.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from mrjoker import dispatcher, updater, SUPPORT_CHAT
-from mrjoker.modules.logchannel import gloggable
+from HyPerMenRobot.modules.helper_funcs.filters import CustomFilters
+from HyPerMenRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from HyPerMenRobot import dispatcher, updater, SUPPORT_CHAT
+from HyPerMenRobot.modules.logchannel import gloggable
 
  
 @user_admin_no_reply
@@ -37,12 +37,12 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             is_kuki = sql.rem_kuki(user_id)
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"Mrjoker AI Disabled\n"
+                f"HyPerMen AI Disabled\n"
                 f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
             update.effective_message.edit_text(
-                "Mr.Joker Kuki Chatbot Disable By {}.".format(mention_html(user.id, user.first_name)),
+                "HyPerMen Kuki Chatbot Disable By {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -62,12 +62,12 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             is_kuki = sql.set_kuki(user_id)
             return (
                 f"<b>{html.escape(chat.title)}:</b>\n"
-                f"Mr.Joker Kuki AI Enable\n"
+                f"HyPerMen Kuki AI Enable\n"
                 f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}\n"
             )
         else:
             update.effective_message.edit_text(
-                "Mr.Joker Kuki Chatbot Enable By {}.".format(mention_html(user.id, user.first_name)),
+                "HyPerMen Kuki Chatbot Enable By {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -125,7 +125,7 @@ def addkuki(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>Mr.Joker Enabled Chats</b>\n"
+    text = "<b>HyPerMen Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
