@@ -116,7 +116,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from mrjoker.config import Development as Config
+    from HyPerMenRobot.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -220,26 +220,26 @@ else:
         
          
 #install aiohttp session
-print("[HyPerMen]: Initializing AIOHTTP Session")
+print("[HyPerMenRobot]: Initializing AIOHTTP Session")
 aiohttpsession = ClientSession()    
     
 #install arq
-print("[HyPerMen]: Initializing ARQ Client")
+print("[HyPerMenRobot]: Initializing ARQ Client")
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)        
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("HyPerMen", API_ID, API_HASH)
-pbot = Client("HyPerMen", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("HyPerMenRobot", API_ID, API_HASH)
+pbot = Client("HyPerMenRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 #mbot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 dispatcher = updater.dispatcher
 
-print("[HyPerMen]: Connecting To Google • Data Center • Mumbai • MongoDB Database")
-MONGO_DB = "HyPerMen"
+print("[HyPerMenRobot]: Connecting To Google • Data Center • Mumbai • MongoDB Database")
+MONGO_DB = "HyPerMenRobot"
 mongodb = MongoClient(MONGO_DB_URL, 27017)[MONGO_DB]
 motor = motor_asyncio.AsyncIOMotorClient(MONGO_DB_URL)
 db = motor[MONGO_DB]
 engine = AIOEngine(motor, MONGO_DB)
 
-print("[HyPerMen]: INITIALZING AIOHTTP SESSION")
+print("[HyPerMenRobot]: INITIALZING AIOHTTP SESSION")
 aiohttpsession = ClientSession()
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -251,7 +251,7 @@ WHITELIST_USERS = list(WHITELIST_USERS)
 SUDO_USERS = list(SUDO_USERS)
 
 # Load at end to ensure all prev variables have been set
-from mrjoker.modules.helper_funcs.handlers import (
+from HyPerMenRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
