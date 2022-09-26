@@ -14,19 +14,19 @@ from telegram.ext import CommandHandler, Filters, MessageHandler
 from telegram.ext.dispatcher import run_async
 from telegram.utils.helpers import mention_html
 
-import mrjoker.modules.sql.locks_sql as sql
-from mrjoker import DRAGONS, LOGGER, dispatcher
-from mrjoker.modules.connection import connected
-from mrjoker.modules.disable import DisableAbleCommandHandler
-from mrjoker.modules.helper_funcs.alternate import send_message, typing_action
-from mrjoker.modules.helper_funcs.chat_status import (
+import HyPerMenRobot.modules.sql.locks_sql as sql
+from HyPerMenRobot import DRAGONS, LOGGER, dispatcher
+from HyPerMenRobot.modules.connection import connected
+from HyPerMenRobot.modules.disable import DisableAbleCommandHandler
+from HyPerMenRobot.modules.helper_funcs.alternate import send_message, typing_action
+from HyPerMenRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_bot_admin,
     is_user_admin,
     user_admin,
     user_not_admin,
 )
-from mrjoker.modules.logchannel import loggable
+from HyPerMenRobot.modules.logchannel import loggable
 
 ad = AlphabetDetector()
 
